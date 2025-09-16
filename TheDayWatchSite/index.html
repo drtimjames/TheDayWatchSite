@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Day Watch</title>
+    <style>
+        /* Reset and full-height */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Hero section */
+        .hero {
+            background-image: url('sailor-binocs.jpg');
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin: 0.2em 0;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            margin: 0.2em 0 1em 0;
+            text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
+        }
+
+        .hero-button {
+            background-color: orange;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            margin: 10px;
+            font-size: 1.2em;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+            min-width: 220px;
+        }
+
+        .hero-button:hover {
+            background-color: darkorange;
+        }
+
+        /* Subtext under right button */
+        .hero-subtext {
+            display: block;
+            font-size: 0.9em;
+            margin-top: 4px;
+            color: #fff;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #222;
+            color: #fff;
+            font-size: 0.9em;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2em; }
+            .hero p { font-size: 1em; }
+            .hero-button { font-size: 1em; padding: 12px 25px; min-width: 180px; }
+            .hero-subtext { font-size: 0.8em; }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>The Day Watch</h1>
+        <p>Stay Updated on Latest Lessons</p>
+        <!-- Left button opens in a new tab -->
+        <a href="https://substack.thedaywatch.org/" class="hero-button" target="_blank">Latest Lessons & Content Hub</a>
+        <!-- Right button opens Shopify in same tab -->
+        <a href="https://themission.today/" class="hero-button">
+            Books & Resources
+            <span class="hero-subtext">Travel / Mission Opportunities</span>
+        </a>
+    </div>
+
+    <footer>
+        © 2025 The Day Watch · Dr. Tim James
+    </footer>
+</body>
+</html>

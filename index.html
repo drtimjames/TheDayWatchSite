@@ -40,31 +40,32 @@
             text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
         }
 
+        /* Button container */
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap; /* stacks on smaller screens */
+            margin-top: 20px;
+        }
+
         .hero-button {
             background-color: orange;
             color: white;
             border: none;
             padding: 15px 30px;
-            margin: 10px;
             font-size: 1.2em;
             cursor: pointer;
             text-decoration: none;
             display: inline-block;
             border-radius: 5px;
             min-width: 220px;
+            font-family: Arial, sans-serif; /* uniform font */
+            text-shadow: none; /* remove shadow */
         }
 
         .hero-button:hover {
             background-color: darkorange;
-        }
-
-        /* Subtext under right button */
-        .hero-subtext {
-            display: block;
-            font-size: 0.9em;
-            margin-top: 4px;
-            color: #fff;
-            text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
         }
 
         /* Footer */
@@ -81,21 +82,19 @@
             .hero h1 { font-size: 2em; }
             .hero p { font-size: 1em; }
             .hero-button { font-size: 1em; padding: 12px 25px; min-width: 180px; }
-            .hero-subtext { font-size: 0.8em; }
         }
     </style>
 </head>
 <body>
     <div class="hero">
         <h1>The Day Watch</h1>
-        <p>Stay Updated on Latest Lessons</p>
-        <!-- Left button opens in a new tab -->
-        <a href="https://substack.thedaywatch.org/" class="hero-button" target="_blank">Latest Lessons & Content Hub</a>
-        <!-- Right button opens Shopify in same tab -->
-        <a href="https://themission.today/" class="hero-button">
-            Books & Resources
-            <span class="hero-subtext">Travel / Mission Opportunities</span>
-        </a>
+        <p>Stay Updated</p>
+        <div class="hero-buttons">
+            <!-- Left button: Substack -->
+            <a href="https://substack.thedaywatch.org/" class="hero-button" target="_blank">Latest News & Essays</a>
+            <!-- Right button: Shopify -->
+            <a href="https://themission.today/" class="hero-button">Online Store & Travel</a>
+        </div>
     </div>
 
     <footer>
